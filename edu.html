@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Education - E-Resume Nur Suhailah</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #f9d6f9, #eecff1);
+        color: #2d142a;
+    }
+
+    .header {
+        background-color: #93578d;
+        padding: 20px 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid #db73ea;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 21px;
+        font-weight: bold;
+        color: #fff;
+        margin-right: auto;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    .navbar a, .dropbtn {
+        background: #6c3f75;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background: #4a274f;
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px rgb(50,23,77);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        border-radius: 6px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #4a274f;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        text-align: center;
+        color: black;
+        margin-bottom: 30px;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .edu-card {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        background: #ffffff;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(147, 87, 141, 0.3);
+        border-left: 6px solid #93578d;
+    }
+
+    .edu-card a {
+        display: block;
+    }
+
+    .edu-img {
+        width: 200px;
+        height: 220px;
+        object-fit: cover;  
+        border-radius: 8px;
+        border: 3px solid #db73ea;
+        box-shadow: 0 0 8px rgba(97,64,81,0.4);
+    }
+
+    .edu-info h3 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #2d142a;
+    }
+
+    .edu-info p {
+        margin: 6px 0;
+        font-size: 15px;
+        color: #333;
+    }
+
+    .footer {
+        background-color: #2d142a;
+        color: White;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 13px;
+        margin-top: 40px;
+        border-top: 3px solid #db73ea;
+    }
+
+    .footer .recommended {
+        font-style: italic;
+        font-size: 12px;
+        color: #f3e0f7;
+        margin-bottom: 6px;
+    }
+
+    .footer .last-updated {
+        font-size: 12px;
+        color: #ddd;
+        margin-bottom: 6px;
+    }
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">NUR SUHAILAH</div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="edu.html">EDUCATION</a>
+        <a href="skills.html">SKILLS</a>
+ 
+        <div class="dropdown">
+          <button class="dropbtn">INVOLVEMENTS</button>
+          <div class="dropdown-content">
+            <a href="iman.html">Deputy Executive, IMAN Club</a>            
+            <a href="volunteer.html">Volunteer, Extra-Curricular</a>
+            <a href="library.html">Library Activities</a>
+          </div>
+        </div>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2><i class="fa-solid fa-graduation-cap"></i> EDUCATION</h2>
+
+        <div class="edu-card">
+        <a href="https://kedah.uitm.edu.my" target="_blank">
+            <img src="uitm.png" alt="UiTM Kedah" class="edu-img">
+        </a>
+        <div class="edu-info">
+            <h3>Universiti Teknologi MARA (UiTM) Cawangan Kedah (2023 – 2026)</h3>
+            <p><strong>Program:</strong> Bachelor of Information Science (Hons) Library Management</p>
+            <p><strong>Status:</strong> Semester 5 student</p>
+        </div>
+    </div>
+
+     <div class="edu-card">
+        <a href="https://www.facebook.com/smaspbedong/" target="_blank">
+            <img src="smasp.png" alt="SMA Sungai Petani" class="edu-img">
+        </a>
+        <div class="edu-info">
+            <h3>Sekolah Menengah Agama Sungai Petani (2022)</h3>
+            <p><strong>STAM:</strong> Jayyid</p>
+            <p><strong>STA:</strong> Jayyid Jiddan</p>
+            <p><strong>MUET:</strong> 3.5</p>
+        </div>
+    </div>
+
+       <div class="edu-card">
+        <a href="https://www.facebook.com/people/Maktab-Mahmud-Merbok/100057122243639/" target="_blank">
+            <img src="mmmk.jpg" alt="MMMK" class="edu-img">
+        </a>
+        <div class="edu-info">
+            <h3>Maktab Mahmud Merbok Kedah (2017-2021)</h3>
+            <p><strong>SPM (2021):</strong> 2A 4A- 2B+ 2C+ 1C</p>
+            <p><strong>Syahadah Tsanawiyyah Ad-Deeniyyah (2020):</strong> Jayyid</p>
+            <p><strong>PT3 (2019):</strong> 5A 4B 2C 1E</p>
+        </div>
+    </div>
+
+    <div class="edu-card">
+        <a href="https://sites.google.com/moe-dl.edu.my/sktsw/home" target="_blank">
+            <img src="sktsw.jpg" alt="SKTSW" class="edu-img">
+        </a>
+        <div class="edu-info">
+            <h3>Sekolah Kebangsaan Taman Seri Wang (2013-2016)</h3>
+            <p><strong>UPSR:</strong> 5B 1C</p>
+            <p><strong>Ujian Penilaian Kelas Kafa (UPKK):</strong> 8A</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="recommended">
+       🌐 Recommended: Latest Chrome, Microsoft Edge, or Firefox | Resolution: 1280x720 or higher
+    </p>
+    <p class="last-updated">
+        📆 Last Update: December 2025
+    </p>
+    <p>
+       Copyright © 2025 Suhailah • All Rights Reserved
+    </p>
+</footer>
+
+</body>
+</html>

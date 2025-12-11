@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me - E-Resume Nur Suhailah</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #f9d6f9, #eecff1);
+        color: #2d142a;
+    }
+
+    .header {
+        background-color: #93578d;
+        padding: 20px 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid #db73ea;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 21px;
+        font-weight: bold;
+        color: #fff;
+        margin-right: auto;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    .navbar a, .dropbtn {
+        background: #6c3f75;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background: #4a274f;
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px rgb(50,23,77);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        border-radius: 6px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #4a274f;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .layout {
+        display: flex;
+        gap: 30px;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .column-left {
+        flex: 1.2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .container, .resume-container, .social-container {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 18px rgba(147, 87, 141, 0.4);
+    }
+
+    .container { border-left: 6px solid #93578d; }
+    .resume-container { border-right: 6px solid #93578d; }
+    .social-container { border-left: 6px solid #93578d; }
+
+    h2 {
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+
+    td {
+        padding: 10px;
+        vertical-align: top;
+    }
+
+    .label {
+        color: #000;
+        font-weight: bold;
+        width: 200px;
+    }
+
+    .info-box {
+        padding: 7px 12px;
+        background: #fdf7ff;
+        border-left: 4px solid #db73ea;
+        border-radius: 6px;
+        color: #000;
+    }
+
+    .info-box ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .info-box li {
+        margin-bottom: 6px;
+    }
+
+    tr:hover .info-box {
+        background: #f3e0f7;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid #db73ea;
+        box-shadow: 0 0 10px rgb(97,64,81);
+    }
+
+    .resume-pic {
+        max-width: 100%;
+        border-radius: 12px;
+        border: 3px solid #db73ea;
+        box-shadow: 0 0 7px rgba(97,64,81,0.5);
+    }
+
+    .pdf-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 18px;
+        background-color: #93578d;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .pdf-button:hover {
+        background-color: #db73ea;
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+        background-color: #2d142a;
+        color: white;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 13px;
+        margin-top: 40px;
+        border-top: 3px solid #db73ea;
+    }
+
+    .footer .recommended {
+        font-style: italic;
+        font-size: 12px;
+        color: #f3e0f7;
+        margin-bottom: 6px;
+    }
+
+    .footer .last-updated {
+        font-size: 12px;
+        color: #ddd;
+        margin-bottom: 6px;
+    }
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">NUR SUHAILAH</div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="edu.html">EDUCATION</a>
+        <a href="skills.html">SKILLS</a>
+       
+ <div class="dropdown">
+            <button class="dropbtn">INVOLVEMENTS</button>
+            <div class="dropdown-content">
+                <a href="iman.html">Deputy Executive, IMAN Club</a>
+                <a href="volunteer.html">Volunteer, Extra-Curricular</a>
+                <a href="library.html">Library Activities</a>
+            </div>
+        </div>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="layout">
+        <div class="column-left">
+            <div class="container">
+                <h2><i class="fa-solid fa-id-card"></i> ABOUT ME</h2>
+                <div style="display:flex; gap:20px;">
+                    <img src="me.png" class="profile-pic" alt="Profile Picture">
+                    <table>
+                        <tr><td class="label"><i class="fa-solid fa-user"></i> Name</td><td class="info-box">Nur Suhailah Binti Mohd Sham</td></tr>
+                        <tr><td class="label"><i class="fa-solid fa-calendar"></i> Birth Date</td><td class="info-box">21 March 2004</td></tr>
+                        <tr><td class="label"><i class="fa-solid fa-location-dot"></i> Birth Place</td><td class="info-box">Tawau, Sabah</td></tr>
+                        <tr><td class="label"><i class="fa-solid fa-star-and-crescent"></i> Religion</td><td class="info-box">Islam</td></tr>
+                        <tr><td class="label"><i class="fa-solid fa-venus"></i> Gender</td><td class="info-box">Female</td></tr>
+                        <tr><td class="label"><i class="fa-solid fa-phone"></i> Phone Number</td><td class="info-box">010-7768420</td></tr>
+                        <tr><td class="label"><i class="fa-solid fa-envelope"></i> Email</td><td class="info-box">suhailah2103@gmail.com</td></tr>
+                                               <tr><td class="label"><i class="fa-solid fa-heart"></i> Interest</td>
+                            <td class="info-box">Web design, pastel layouts, personal branding, baking, volunteer programs</td>
+                        </tr>
+                        <tr><td class="label"><i class="fa-solid fa-briefcase"></i> Experience</td>
+                            <td class="info-box">
+                                <ul>
+                                    <li>Part-time Quran teacher, conducting individual and group sessions teaching Iqra’ and Quran reading.</li>
+                                    <li>Deputy Executive of the Academic & Welfare Bureau for IMAN Club at UiTM Kedah.</li>
+                                    <li>Facilitated “Kem Bestari Solat” for primary school students and volunteered in Club Festival activities.</li>
+                                    <li>Editor and co-author for an academic book, and committee member in library programs.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-right">
+            <div class="resume-container">
+                <h2><i class="fa-solid fa-file"></i> MY RESUME</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="resumepic.png" alt="Resume Image" class="resume-pic">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">
+                            <a href="Nur Suhailah Resume.pdf" class="pdf-button" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Go to PDF
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="social-container">
+                <h2><i class="fa-brands fa-tiktok"></i> MY SOCIAL MEDIA</h2>
+                <table style="width:100%; font-size:16px;">
+                    <tr>
+                        <td style="text-align:center;">
+                            TikTok: 
+                            <a href="https://www.tiktok.com/@suhailah014?_r=1&_t=ZS-925CvXTusXC" target="_blank">
+                                @suhailah014
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center; padding-top:10px;">
+                            Personal Website: 
+                            <a href="https://nursuhailah.github.io/personal-website/" target="_blank">
+                                https://nursuhailah.github.io/personal-website/
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="recommended">
+       🌐 Recommended: Latest Chrome, Microsoft Edge, or Firefox | Resolution: 1280x720 or higher
+    </p>
+    <p class="last-updated">
+        📆 Last Update: December 2025
+    </p>
+    <p>
+       Copyright © 2025 Suhailah • All Rights Reserved
+    </p>
+</footer>
+
+</body>
+</html>
+
+

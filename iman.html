@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IMAN Club - E-Resume Nur Suhailah</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    body {
+        margin:0;
+        font-family:'Segoe UI',sans-serif;
+        background:linear-gradient(to right,#f9d6f9,#eecff1);
+        color:#2d142a;
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .header {
+        background-color:#93578d;
+        padding:20px 5%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        border-bottom:3px solid #db73ea;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {font-size:21px;font-weight:bold;color:#fff;margin-right:auto;}
+
+    .navbar {display:flex;justify-content:center;gap:15px;flex:1;flex-wrap: wrap;}
+    .navbar a,.dropbtn {
+        background:#6c3f75;
+        color:white;
+        padding:8px 14px;
+        border-radius:6px;
+        text-decoration:none;font-size:14px;font-weight:600;transition:0.3s;
+        border:none;cursor:pointer;
+    }
+    .navbar a:hover,.dropdown:hover .dropbtn {
+        background:#4a274f;
+        transform:translateY(-2px);
+        box-shadow:0 3px 8px rgb(50,23,77);
+    }
+    .dropdown {position:relative;display:inline-block;}
+
+    .dropdown-content {
+        display:none;position:absolute;background-color:#fff;min-width:200px;
+        box-shadow:0px 8px 16px rgba(0,0,0,0.2);border-radius:6px;z-index:1;
+    }
+    .dropdown-content a {
+color:white;
+padding:12px 16px;
+text-decoration:none;
+display:block;}
+    .dropdown-content a:hover {background-color:#4a274f;}
+    .dropdown:hover .dropdown-content {display:block;}
+
+    .content {
+        max-width:1100px;
+        margin:40px auto;
+        padding:20px;
+        box-sizing:border-box;
+        text-align:center;
+        flex:1; 
+    }
+    h2 {text-align:center;color:black;margin-bottom:20px;font-size:26px;letter-spacing:1px;}
+
+    .activities {display:grid;grid-template-columns: repeat(2, 1fr);gap:20px;}
+
+    .activity-box {
+        background:#fff;border:2px solid #93578d;border-radius:12px;
+        box-shadow:0 0 12px rgba(147,87,141,0.3);padding:20px;text-align:center;
+        display:flex;flex-direction:column;justify-content:flex-start;
+        min-height:500px;
+    }
+    .activity-box h3 {margin-bottom:10px;font-size:18px;color:#2d142a;}
+    .activity-box p {text-align:justify;font-size:14px;margin-bottom:15px;}
+
+    .images-grid {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+        justify-items:center;
+        margin-bottom:15px;
+    }
+    .images-grid img {
+        width:140px;height:140px;object-fit:cover;border-radius:10px;
+        border:3px solid #db73ea;box-shadow:0 0 8px rgba(97,64,81,0.4);
+    }
+
+    .video-box {margin:10px 0;}
+    .video-box video {
+        border:3px solid #93578d;border-radius:10px;box-shadow:0 0 10px rgba(97,64,81,0.4);
+        width:100%;max-width:320px;height:auto;
+    }
+
+    .cert-btn {
+        background:#93578d;color:#fff;padding:8px 14px;border:none;border-radius:6px;
+        cursor:pointer;font-weight:bold;margin-top:auto;
+    }
+    .cert-btn:hover {background:#db73ea;}
+
+    .modal {
+      display:none;position:fixed;z-index:2000;padding-top:60px;
+      left:0;top:0;width:100%;height:100%;overflow:auto;
+      background-color:rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin:auto;display:block;max-width:450px;
+      border-radius:12px;box-shadow:0 0 12px rgba(255,255,255,0.5);
+    }
+    .close {
+      position:absolute;top:20px;right:35px;color:#fff;
+      font-size:40px;font-weight:bold;cursor:pointer;
+    }
+
+    .footer {
+        background-color:#2d142a;
+        color:white;
+        text-align:center;
+        padding:20px 0;
+        font-size:13px;
+        margin-top:auto;
+    }
+    .footer .recommended {font-style: italic;font-size: 12px;color: #f3e0f7;margin-bottom: 8px;}
+    .footer .last-updated {font-size: 12px;color: #ddd;margin-bottom: 8px;}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">NUR SUHAILAH</div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="edu.html">EDUCATION</a>
+        <a href="skills.html">SKILLS</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">INVOLVEMENTS</button>
+          <div class="dropdown-content">
+            <a href="iman.html">Deputy Executive, IMAN Club</a>            
+            <a href="volunteer.html">Volunteer, Extra-Curricular</a>
+            <a href="library.html">Library Activities</a>
+          </div>
+        </div>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2><i class="fa-solid fa-users"></i> Deputy Executive, IMAN Club</h2>
+    <p>
+        As Deputy Executive of the Academic & Welfare Bureau in IMAN Club, I coordinated events, 
+        supported members’ welfare, and facilitated academic programs. My role involved planning 
+        activities, managing logistics, and ensuring smooth execution of club initiatives that 
+        benefited students and the community.
+    </p>
+
+    <div class="activities">
+         <div class="activity-box">
+            <h3>PROGRAMME "DISKUSI MINDA: CABARAN MAHASISWA"</h3>
+            <p>
+                This programme focused on discussing challenges faced by students in the era of modernization 
+                and Western ideologies. It encouraged critical thinking and provided a platform for sharing ideas.
+            </p>
+            <div class="images-grid">
+                <img src="img1a.jpg" alt="Activity 1">
+                <img src="img1b.jpg" alt="Activity 1">
+                <img src="img1c.jpg" alt="Activity 1">
+                <img src="img1d.jpg" alt="Activity 1">
+                <img src="img1e.jpg" alt="Activity 1">
+                <img src="img1f.jpg" alt="Activity 1">
+            </div>
+            <button class="cert-btn" onclick="openCert('cert1.jpg')">View Certificate</button>
+        </div>
+
+        <div class="activity-box">
+            <h3>PROGRAMME "IMAN NEXT GEN: BENGKEL KEPIMPINAN"</h3>
+            <p>
+                A leadership workshop designed to nurture future leaders among IMAN Club members. 
+                Participants learned teamwork, communication, and management skills through interactive sessions.
+            </p>
+            <div class="images-grid">
+                <img src="img2a.jpg" alt="Activity 2">
+                <img src="img2b.jpg" alt="Activity 2">
+                <img src="img2c.jpg" alt="Activity 2">
+                <img src="img2d.jpg" alt="Activity 2">
+                <img src="img2e.jpg" alt="Activity 2">
+                <img src="img2f.jpg" alt="Activity 2">
+            </div>
+            <button class="cert-btn" onclick="openCert('cert2.jpg')">View Certificate</button>
+        </div>
+
+        <div class="activity-box">
+            <h3>PROGRAMME "KURSUS PENGURUSAN JENAZAH"</h3>
+            <p>
+                This course provided practical and theoretical knowledge on Islamic funeral management. 
+                Participants learned step-by-step procedures and the importance of compassion and respect 
+                in handling such responsibilities.
+            </p>
+            <div class="images-grid">
+                <img src="img3a.jpg" alt="Activity 3">
+                <img src="img3b.jpg" alt="Activity 3">
+                <img src="img3c.jpg" alt="Activity 3">
+            </div>
+            <div class="video-box">
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <button class="cert-btn" onclick="openCert('cert3.jpg')">View Certificate</button>
+        </div>
+        <div class="activity-box">
+            <h3>PROGRAMME "SKILL UP 1.0 SENI KHAT"</h3>
+            <p>
+                A creative workshop introducing participants to the art of khat calligraphy. 
+                It enhanced artistic skills and appreciation for Islamic cultural heritage 
+                through hands-on practice and guidance.
+            </p>
+            <div class="images-grid">
+                <img src="img4a.jpg" alt="Activity 4">
+                <img src="img4b.jpg" alt="Activity 4">
+                <img src="img4c.jpg" alt="Activity 4">
+                <img src="img4d.jpg" alt="Activity 4">
+                <img src="img4e.jpg" alt="Activity 4">
+                <img src="img4f.jpg" alt="Activity 4">
+            </div>
+        </div>
+    </div> 
+</div> 
+
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeCert()">&times;</span>
+  <img class="modal-content" id="certImage">
+</div>
+
+<footer class="footer">
+    <p class="recommended">
+       🌐 Recommended: Latest Chrome, Microsoft Edge, or Firefox | Resolution: 1280x720 or higher
+    </p>
+    <p class="last-updated">
+        📆 Last Update: December 2025
+    </p>
+    <p>
+      Copyright © 2025 Suhailah • All Rights Reserved
+    </p>
+</footer>
+
+<script>
+function openCert(src) {
+  document.getElementById("certModal").style.display = "block";
+  document.getElementById("certImage").src = src;
+}
+function closeCert() {
+  document.getElementById("certModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
